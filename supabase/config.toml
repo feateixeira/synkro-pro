@@ -1,0 +1,25 @@
+project_id = "fjznsdvtgqymoiznnbkm"
+
+[functions.send-whatsapp-reminder]
+verify_jwt = false
+
+[functions.notify-new-appointment]
+verify_jwt = false
+
+[functions.stripe-checkout]
+verify_jwt = false
+
+[functions.stripe-webhook]
+verify_jwt = false
+
+[functions.customer-portal]
+verify_jwt = false
+
+[functions.check-subscription]
+verify_jwt = false
+
+[functions.create-notification]
+verify_jwt = false
+
+[functions.send-appointment-reminders]
+verify_jwt = false
