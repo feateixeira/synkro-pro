@@ -36,7 +36,7 @@ Clone o repositório:
 
 Bash
 
-git clone https://github.com/seu-usuario/synkro.git
+git clone https://github.com/feateixeira/synkro.git
 cd synkro
 Instale as dependências:
 
