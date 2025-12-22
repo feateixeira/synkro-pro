@@ -1,73 +1,70 @@
-# Welcome to your Lovable project
+💈 Synkro - Sincronia Perfeita para sua Barbearia
+A Synkro é uma plataforma SaaS de alta performance projetada para barbearias modernas. Esqueça agendas de papel e sistemas complexos de desktop. A Synkro coloca a gestão completa do negócio na palma da mão do barbeiro, com foco total em agilidade, recorrência e experiência do cliente.
 
-## Project info
+✨ Funcionalidades de Ponta
+📱 Mobile-First PWA: Experiência de aplicativo nativo no navegador, ideal para tablets e celulares.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+📅 Agenda Inteligente: Sincronização em tempo real entre múltiplos profissionais.
 
-## How can I edit this code?
+💳 Assinaturas Integradas: Cobrança recorrente via Cartão e PIX com gestão automática de planos (Stripe).
 
-There are several ways of editing your application.
+🎁 Fidelidade Digital: Sistema de pontos integrado ao checkout para aumentar o LTV do cliente.
 
-**Use Lovable**
+📸 Portfólio Dinâmico: Galeria de fotos integrada para exibir os melhores cortes.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+🔐 Login Social: Autenticação ultra-rápida via Google/Gmail com Supabase Auth.
 
-Changes made via Lovable will be committed automatically to this repo.
+⏳ Trial de 5 dias: Lógica de degustação automática para converter novos usuários.
 
-**Use your preferred IDE**
+🛠️ Stack Tecnológica
+O projeto utiliza as ferramentas mais modernas do mercado para garantir escalabilidade e velocidade:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Frontend: React.js + Vite
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Estilização: Tailwind CSS + Shadcn/UI (Dark Mode Premium)
 
-Follow these steps:
+Backend & DB: Supabase (PostgreSQL)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Autenticação: Supabase Auth + Google OAuth
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Pagamentos: Stripe Billing / Mercado Pago
 
-# Step 3: Install the necessary dependencies.
-npm i
+Hospedagem: Vercel
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+🚀 Como Executar o Projeto
+Clone o repositório:
+
+Bash
+
+git clone https://github.com/seu-usuario/synkro.git
+cd synkro
+Instale as dependências:
+
+Bash
+
+npm install
+Configure as Variáveis de Ambiente: Crie um arquivo .env na raiz e adicione suas chaves:
+
+Snippet de código
+
+VITE_SUPABASE_URL=seu_url_supabase
+VITE_SUPABASE_ANON_KEY=sua_chave_anonima
+VITE_STRIPE_PUBLIC_KEY=sua_chave_stripe
+Inicie o servidor de desenvolvimento:
+
+Bash
+
 npm run dev
-```
+🗺️ Roadmap de Desenvolvimento
+[x] Arquitetura Multi-tenant inicial.
 
-**Edit a file directly in GitHub**
+[x] Integração com Google Auth.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+[ ] Implementação do Split de Pagamentos por barbeiro.
 
-**Use GitHub Codespaces**
+[ ] Automação de lembretes via WhatsApp API.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+[ ] Dashboard avançado com métricas de retenção (Churn e CAC).
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+⚖️ Licença
+Este projeto é um software proprietário sob a marca Synkro (Tex Solutions). Todos os direitos reservados.
