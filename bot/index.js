@@ -119,10 +119,10 @@ function startScheduler() {
     // Run every minute
     cron.schedule('* * * * *', async () => {
         const now = new Date();
-        const twoHoursLater = new Date(now.getTime() + 2 * 60 * 60 * 1000);
+        const twoHoursFromNow = new Date(now.getTime() + 2 * 60 * 60 * 1000);
 
         // Format to HH:mm
-        const targetTime = twoHoursLater.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+        const targetTime = twoHoursFromNow.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', hour12: false });
         const currentDate = now.toISOString().split('T')[0];
 
         // We want to find appointments that:
@@ -133,7 +133,7 @@ function startScheduler() {
         // Because cron runs every minute, we check if start_time starts with our target HH:mm
         // Supposing start_time is "14:30:00" and targetTime is "14:30"
 
-        console.log(`Verificando agendamentos para hoje ${currentDate} às ${targetTime}...`);
+        console.log(`[${now.toLocaleTimeString('pt-BR', { hour12: false })}] Verificando agendamentos para hoje ${currentDate} às ${targetTime}...`);
 
         const { data: appointments, error } = await supabase
             .from('appointments')

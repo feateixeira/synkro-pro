@@ -7,6 +7,14 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Bot sensitive and dependency data
+bot/auth_info/
+bot/node_modules/
+bot/.env
+.env
+.env.local
+.env.*
+
 node_modules
 dist
 dist-ssr
